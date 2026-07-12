@@ -5,7 +5,7 @@ import os
 st.set_page_config(page_title="Salve Faccha - Resultados", layout="wide")
 
 # Ruta del archivo Excel
-archivo = r"C:\Users\jeans\Documents\BALANCE HÍDRICO DEL EMBALSE SALVE FACCHA\BHSF\Resumen_General_Modelo_Mejorado_8Subcuencas.xlsx"
+archivo = "Resumen_General_Modelo_Mejorado_8Subcuencas.xlsx"
 # Verificar existencia
 if not os.path.exists(archivo):
     st.error("No se encontró el archivo Excel:")
@@ -79,6 +79,7 @@ st.dataframe(resumen)
 
 st.subheader("Resultados del sistema completo")
 st.dataframe(sistema)
+
 
 
 st.download_button(
