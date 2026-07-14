@@ -5,7 +5,7 @@ import os
 st.set_page_config(page_title="Salve Faccha - Resultados", layout="wide")
 
 # Ruta del archivo Excel
-archivo = "Resumen_General_Modelo_Mejorado_8Subcuencas.xlsx"
+archivo = "Datos/Resumen_General_Modelo_Mejorado_8Subcuencas.xlsx"
 # Verificar existencia
 if not os.path.exists(archivo):
     st.error("No se encontró el archivo Excel:")
